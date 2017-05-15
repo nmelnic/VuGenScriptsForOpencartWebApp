@@ -1,0 +1,13 @@
+[t7]
+FileName1=t7_iecompatviewlist.xml
+URL1=https://iecvlist.microsoft.com/IE11/1479242656000/iecompatviewlist.xml
+Total=2
+ContentType=text/xml
+SnapshotXmlFile=snapshot_7.xml
+RequestHeaderFile=t7_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t7_ResponseHeader.txt
+FileName2=t7_urlblockindex.html
+URL2=https://r20swj13mr.microsoft.com/ieblocklist/v1/urlblockindex.bin
+[ProtocolInfo]
+ProtocolId=QTWeb

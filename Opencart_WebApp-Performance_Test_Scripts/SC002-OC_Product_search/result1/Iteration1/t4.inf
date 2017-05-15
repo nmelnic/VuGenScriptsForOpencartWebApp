@@ -1,0 +1,13 @@
+[t4]
+SnapshotXmlFile=snapshot_3.xml
+ContentType=text/html
+StepName=Url: Search_for_a_{search_items}
+Total=1
+FileName1=t4.html
+RequestHeaderFile=t4_RequestHeader.txt
+ResponseHeaderFile=t4_ResponseHeader.txt
+RawStepEndTime=1494837287578
+RawStepName=Search_for_a_{search_items}
+RequestBodyFile=t4_RequestBody.txt
+RawStepStartTime=1494837287313
+URL1=http://172.16.44.19/oc/index.php?route=product/search&search=samsung

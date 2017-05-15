@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Cache-Control: max-age=21600
+Content-MD5: ijQpqrhSaTypRLl4QBvvHg==
+Content-Type: text/xml
+Date: Thu, 11 May 2017 11:10:10 GMT
+Etag: 0x8D49654A0E2BABF
+Last-Modified: Mon, 08 May 2017 20:55:58 GMT
+Server: ECAcc (frf/8759)
+Vary: Accept-Encoding
+X-Cache: HIT
+x-ms-blob-type: BlockBlob
+x-ms-lease-status: unlocked
+x-ms-request-id: 02fef1aa-0001-0092-5735-ca7ab4000000
+x-ms-version: 2009-09-19
+Content-Length: 34709
+

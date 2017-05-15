@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Cache-Control: public, max-age=15552000
+Content-Type: text/html
+Content-Encoding: gzip
+Last-Modified: Mon, 19 Sep 2016 18:15:57 GMT
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+Date: Thu, 11 May 2017 11:10:32 GMT
+Content-Length: 1569
+

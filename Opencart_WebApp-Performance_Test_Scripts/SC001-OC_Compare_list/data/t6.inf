@@ -1,0 +1,17 @@
+[t6]
+FileName1=t6.htm
+URL1=http://172.16.44.19/oc/index.php?route=product/compare
+Total=4
+RequestHeaderFile=t6_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t6_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_6.xml
+FileName2=t6_stars-0.png
+URL2=http://172.16.44.19/oc/catalog/view/theme/default/image/stars-0.png
+FileName3=t6_nikon_d300_1-90x90.jpg
+URL3=http://172.16.44.19/oc/image/cache/data/demo/nikon_d300_1-90x90.jpg
+FileName4=t6_canon_eos_5d_1-90x90.jpg
+URL4=http://172.16.44.19/oc/image/cache/data/demo/canon_eos_5d_1-90x90.jpg
+[ProtocolInfo]
+ProtocolId=QTWeb
