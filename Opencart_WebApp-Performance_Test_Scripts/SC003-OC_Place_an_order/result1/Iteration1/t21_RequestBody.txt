@@ -1,2 +1,0 @@
-"shipping_address=existing&address_id=764&firstname=&lastname=&company=&address_1=&address_2=&c"
-"ity=&postcode=md2020&country_id=140&zone_id=2182"
