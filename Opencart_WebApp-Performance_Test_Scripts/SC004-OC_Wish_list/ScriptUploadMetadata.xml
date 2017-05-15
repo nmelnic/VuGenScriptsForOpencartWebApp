@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>SC004-OC_Wish_list</ScriptName>
+  <Protocol>Web - HTTP/HTML</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="SC004-OC_Wish_list.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="SC004-OC_Wish_list.prm" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="email(1).dat" Filter="2" />
+    <FileEntry Name="email.dat" Filter="2" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="2" />
+    <FileEntry Name="Bookmarks.xml" Filter="2" />
+    <FileEntry Name="Breakpoints.xml" Filter="2" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="2" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="2" />
+    <FileEntry Name="ScriptVcsSettings.xml" Filter="2" />
+    <FileEntry Name="UserTasks.xml" Filter="2" />
+    <FileEntry Name="password.dat" Filter="2" />
+    <FileEntry Name="combined_SC004-OC_Wish_list.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name=".gitignore" Filter="1" />
+    <FileEntry Name="13557836844.idx" Filter="1" />
+    <FileEntry Name="14580809744.idx" Filter="1" />
+    <FileEntry Name="16645457944.idx" Filter="1" />
+    <FileEntry Name="20747682144.idx" Filter="1" />
+    <FileEntry Name="2198091544.idx" Filter="1" />
+    <FileEntry Name="992905244.idx" Filter="1" />
+    <FileEntry Name="data.zip" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="NewParam.dat" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="replay.har" Filter="1" />
+    <FileEntry Name="SC004-OC_Wish_list.c.pickle" Filter="1" />
+    <FileEntry Name="SC004-OC_Wish_list.ci" Filter="1" />
+    <FileEntry Name="SC004-OC_Wish_list.prm.bak" Filter="1" />
+    <FileEntry Name="SC004-OC_Wish_list.sdf" Filter="1" />
+    <FileEntry Name="shunra.shunra" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name=".git\" Filter="1" />
+    <FileEntry Name="data\" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

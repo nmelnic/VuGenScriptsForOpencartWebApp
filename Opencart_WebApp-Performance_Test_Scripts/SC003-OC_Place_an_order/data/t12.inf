@@ -1,0 +1,15 @@
+[t12]
+FileName1=t12.htm
+URL1=http://172.16.44.19/oc/index.php?route=checkout/cart/add
+Total=3
+RequestHeaderFile=t12_RequestHeader.txt
+RequestBodyFile=t12_RequestBody.txt
+ResponseHeaderFile=t12_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_12.xml
+FileName2=t12_close.png
+URL2=http://172.16.44.19/oc/catalog/view/theme/default/image/close.png
+FileName3=t12_success.png
+URL3=http://172.16.44.19/oc/catalog/view/theme/default/image/success.png
+[ProtocolInfo]
+ProtocolId=QTWeb

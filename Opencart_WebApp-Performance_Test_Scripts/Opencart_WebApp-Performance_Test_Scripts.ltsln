@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+# SharpDevelop 4.1.3.0
+Project("BD4ADE76-EECD-419C-81F1-06F9F9737D9F") = "SC001-OC_Compare_list", "SC001-OC_Compare_list\SC001-OC_Compare_list.usr", "BD4ADE76-EECD-419C-81F1-06F9F9737D9F"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XFByb2plY3RzXE15UHJvamVjdHNcUGVyZm9ybWFuY2VcTG9hZFJ1bm5lclxMb2FkX1J1bm5lci1PcGVuY2FydF9TY3JpcHRzXE9wZW5jYXJ0X1dlYkFwcC1QZXJmb3JtYW5jZV9UZXN0X1NjcmlwdHNcU0MwMDEtT0NfQ29tcGFyZV9saXN0XFNDMDAxLU9DX0NvbXBhcmVfbGlzdC51c3I8L0xvYWREYXRhPg0KICA8RmlsZXM+DQogICAgPEZpbGU+U0MwMDEtT0NfQ29tcGFyZV9saXN0LnVzcjwvRmlsZT4NCiAgPC9GaWxlcz4NCiAgPE1vZGlmaWVkPjIwMTctMDUtMTJUMTg6MTM6MzEuMzA5Njg3NyswMzowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = False
+	EndProjectSection
+EndProject
+Project("F785E77D-3C39-4F97-B216-BD86C46F8B35") = "SC002-OC_Product_search", "SC002-OC_Product_search\SC002-OC_Product_search.usr", "F785E77D-3C39-4F97-B216-BD86C46F8B35"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XFByb2plY3RzXE15UHJvamVjdHNcUGVyZm9ybWFuY2VcTG9hZFJ1bm5lclxMb2FkX1J1bm5lci1PcGVuY2FydF9TY3JpcHRzXE9wZW5jYXJ0X1dlYkFwcC1QZXJmb3JtYW5jZV9UZXN0X1NjcmlwdHNcU0MwMDItT0NfUHJvZHVjdF9zZWFyY2hcU0MwMDItT0NfUHJvZHVjdF9zZWFyY2gudXNyPC9Mb2FkRGF0YT4NCiAgPEZpbGVzPg0KICAgIDxGaWxlPlNDMDAyLU9DX1Byb2R1Y3Rfc2VhcmNoLnVzcjwvRmlsZT4NCiAgPC9GaWxlcz4NCiAgPE1vZGlmaWVkPjIwMTctMDUtMTJUMTg6MTM6NTkuMjMzNTc1OSswMzowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = False
+	EndProjectSection
+EndProject
+Project("AEC52C9F-70B3-41EE-A498-C1859B24DCE5") = "SC003-OC_Place_an_order", "SC003-OC_Place_an_order\SC003-OC_Place_an_order.usr", "AEC52C9F-70B3-41EE-A498-C1859B24DCE5"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XFByb2plY3RzXE15UHJvamVjdHNcUGVyZm9ybWFuY2VcTG9hZFJ1bm5lclxMb2FkX1J1bm5lci1PcGVuY2FydF9TY3JpcHRzXE9wZW5jYXJ0X1dlYkFwcC1QZXJmb3JtYW5jZV9UZXN0X1NjcmlwdHNcU0MwMDMtT0NfUGxhY2VfYW5fb3JkZXJcU0MwMDMtT0NfUGxhY2VfYW5fb3JkZXIudXNyPC9Mb2FkRGF0YT4NCiAgPEZpbGVzPg0KICAgIDxGaWxlPlNDMDAzLU9DX1BsYWNlX2FuX29yZGVyLnVzcjwvRmlsZT4NCiAgPC9GaWxlcz4NCiAgPE1vZGlmaWVkPjIwMTctMDUtMTJUMTg6MTQ6MjIuMTk3MzIzNSswMzowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = False
+	EndProjectSection
+EndProject
+Project("4EBD37F0-1901-45CD-AFA1-484302A5BEC7") = "SC004-OC_Wish_list", "SC004-OC_Wish_list\SC004-OC_Wish_list.usr", "4EBD37F0-1901-45CD-AFA1-484302A5BEC7"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XFByb2plY3RzXE15UHJvamVjdHNcUGVyZm9ybWFuY2VcTG9hZFJ1bm5lclxMb2FkX1J1bm5lci1PcGVuY2FydF9TY3JpcHRzXE9wZW5jYXJ0X1dlYkFwcC1QZXJmb3JtYW5jZV9UZXN0X1NjcmlwdHNcU0MwMDQtT0NfV2lzaF9saXN0XFNDMDA0LU9DX1dpc2hfbGlzdC51c3I8L0xvYWREYXRhPg0KICA8RmlsZXM+DQogICAgPEZpbGU+U0MwMDQtT0NfV2lzaF9saXN0LnVzcjwvRmlsZT4NCiAgPC9GaWxlcz4NCiAgPE1vZGlmaWVkPjIwMTctMDUtMTJUMTg6MTQ6NDAuNjA2NzM0MiswMzowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = True
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		BD4ADE76-EECD-419C-81F1-06F9F9737D9F.Debug|Any CPU.Build.0 = Debug|Any CPU
+		BD4ADE76-EECD-419C-81F1-06F9F9737D9F.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		BD4ADE76-EECD-419C-81F1-06F9F9737D9F.Release|Any CPU.Build.0 = Release|Any CPU
+		BD4ADE76-EECD-419C-81F1-06F9F9737D9F.Release|Any CPU.ActiveCfg = Release|Any CPU
+		F785E77D-3C39-4F97-B216-BD86C46F8B35.Debug|Any CPU.Build.0 = Debug|Any CPU
+		F785E77D-3C39-4F97-B216-BD86C46F8B35.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		F785E77D-3C39-4F97-B216-BD86C46F8B35.Release|Any CPU.Build.0 = Release|Any CPU
+		F785E77D-3C39-4F97-B216-BD86C46F8B35.Release|Any CPU.ActiveCfg = Release|Any CPU
+		AEC52C9F-70B3-41EE-A498-C1859B24DCE5.Debug|Any CPU.Build.0 = Debug|Any CPU
+		AEC52C9F-70B3-41EE-A498-C1859B24DCE5.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		AEC52C9F-70B3-41EE-A498-C1859B24DCE5.Release|Any CPU.Build.0 = Release|Any CPU
+		AEC52C9F-70B3-41EE-A498-C1859B24DCE5.Release|Any CPU.ActiveCfg = Release|Any CPU
+		4EBD37F0-1901-45CD-AFA1-484302A5BEC7.Debug|Any CPU.Build.0 = Debug|Any CPU
+		4EBD37F0-1901-45CD-AFA1-484302A5BEC7.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		4EBD37F0-1901-45CD-AFA1-484302A5BEC7.Release|Any CPU.Build.0 = Release|Any CPU
+		4EBD37F0-1901-45CD-AFA1-484302A5BEC7.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

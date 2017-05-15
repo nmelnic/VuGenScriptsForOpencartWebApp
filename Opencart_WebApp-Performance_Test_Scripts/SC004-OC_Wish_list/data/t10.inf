@@ -1,0 +1,11 @@
+[t10]
+FileName1=t10.htm
+URL1=http://s7.addthis.com/static/sh.f7354b64245ec78fa8b63827.html
+Total=1
+RequestHeaderFile=t10_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t10_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_10.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

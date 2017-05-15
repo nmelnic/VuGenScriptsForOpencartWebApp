@@ -1,0 +1,13 @@
+[t3]
+FileName1=t3.htm
+URL1=http://172.16.44.19/oc/index.php?route=product/search
+Total=2
+RequestHeaderFile=t3_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t3_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_3.xml
+FileName2=t3_jquery.total-storage.min.html
+URL2=http://172.16.44.19/oc/catalog/view/javascript/jquery/jquery.total-storage.min.js
+[ProtocolInfo]
+ProtocolId=QTWeb

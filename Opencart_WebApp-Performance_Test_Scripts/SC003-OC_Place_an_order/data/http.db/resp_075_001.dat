@@ -1,0 +1,724 @@
+beaa
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Shopping Cart</title>
+<base href="http://172.16.44.19/oc/" />
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/colorbox/colorbox.css" media="screen" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
+<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/colorbox/jquery.colorbox-min.js"></script>
+<!--[if IE 7]> 
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie7.css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie6.css" />
+<script type="text/javascript" src="catalog/view/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('#logo img');
+</script>
+<![endif]-->
+</head>
+<body>
+<div id="container">
+<div id="header">
+      <form action="http://172.16.44.19/oc/index.php?route=module/currency" method="post" enctype="multipart/form-data">
+  <div id="currency">Currency<br />
+                <a title="Euro"><b>€</b></a>
+                        <a title="Pound Sterling" onclick="$('input[name=\'currency_code\']').attr('value', 'GBP'); $(this).parent().parent().submit();">£</a>
+                        <a title="US Dollar" onclick="$('input[name=\'currency_code\']').attr('value', 'USD'); $(this).parent().parent().submit();">$</a>
+                <input type="hidden" name="currency_code" value="" />
+    <input type="hidden" name="redirect" value="http://172.16.44.19/oc/index.php?route=checkout/cart" />
+  </div>
+</form>
+  <div id="cart">
+  <div class="heading">
+    <h4>Shopping Cart</h4>
+    <a><span id="cart-total">1 item(s) - 73.43€</span></a></div>
+  <div class="content">
+        <div class="mini-cart-info">
+      <table>
+                <tr>
+          <td class="image">            <a href="http://172.16.44.19/oc/index.php?route=product/product&amp;product_id=30"><img src="http://172.16.44.19/oc/image/cache/data/demo/canon_eos_5d_1-47x47.jpg" alt="Canon EOS 5D" title="Canon EOS 5D" /></a>
+            </td>
+          <td class="name"><a href="http://172.16.44.19/oc/index.php?route=product/product&amp;product_id=30">Canon EOS 5D</a>
+            <div>
+                          </div></td>
+          <td class="quantity">x&nbsp;1</td>
+          <td class="total">73.43€</td>
+          <td class="remove"><img src="catalog/view/theme/default/image/remove-small.png" alt="Remove" title="Remove" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=30' : $('#cart').load('index.php?route=module/cart&remove=30' + ' #cart > *');" /></td>
+        </tr>
+                      </table>
+    </div>
+    <div class="mini-cart-total">
+      <table>
+                <tr>
+          <td class="right"><b>Sub-Total:</b></td>
+          <td class="right">73.43€</td>
+        </tr>
+                <tr>
+          <td class="right"><b>Total:</b></td>
+          <td class="right">73.43€</td>
+        </tr>
+              </table>
+    </div>
+    <div class="checkout"><a href="http://172.16.44.19/oc/index.php?route=checkout/cart">View Cart</a> | <a href="http://172.16.44.19/oc/index.php?route=checkout/checkout">Checkout</a></div>
+      </div>
+</div>  <div id="search">
+    <div class="button-search"></div>
+    <input type="text" name="search" placeholder="Search" value="" />
+  </div>
+  <div id="welcome">
+        You are logged in as <a href="http://172.16.44.19/oc/index.php?route=account/account">test1</a> <b>(</b> <a href="http://172.16.44.19/oc/index.php?route=account/logout">Logout</a> <b>)</b>      </div>
+  <div class="links"><a href="http://172.16.44.19/oc/index.php?route=common/home">Home</a><a href="http://172.16.44.19/oc/index.php?route=account/wishlist" id="wishlist-total">Wish List (0)</a><a href="http://172.16.44.19/oc/index.php?route=account/account">My Account</a><a href="http://172.16.44.19/oc/index.php?route=checkout/cart">Shopping Cart</a><a href="http://172.16.44.19/oc/index.php?route=checkout/checkout">Checkout</a></div>
+</div>
+<div id="menu">
+  <ul>
+        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=20">Desktops</a>
+            <div>
+                <ul>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=20_26">PC (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=20_60">PDA (1)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=20_27">Mac (1)</a></li>
+                            </ul>
+              </div>
+          </li>
+        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=18">Laptops &amp; Notebooks</a>
+            <div>
+                <ul>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=18_46">Macs (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=18_45">Windows (0)</a></li>
+                            </ul>
+              </div>
+          </li>
+        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=25">Components</a>
+            <div>
+                <ul>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=25_29">Mice and Trackballs (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=25_28">Monitors (1)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=25_30">Printers (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=25_31">Scanners (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=25_32">Web Cameras (0)</a></li>
+                            </ul>
+              </div>
+          </li>
+        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=57">Tablets</a>
+          </li>
+        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=17">Software</a>
+          </li>
+        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=24">Phones &amp; PDAs</a>
+          </li>
+        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=33">Cameras</a>
+          </li>
+        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34">MP3 Players</a>
+            <div>
+                <ul>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_43">test 11 (2)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_44">test 12 (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_47">test 15 (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_48">test 16 (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_49">test 17 (0)</a></li>
+                            </ul>
+                <ul>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_50">test 18 (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_51">test 19 (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_52">test 20 (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_53">test 21 (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_54">test 22 (0)</a></li>
+                            </ul>
+                <ul>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_55">test 23 (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_56">test 24 (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_38">test 4 (4)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_37">test 5 (0)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_39">test 6 (12)</a></li>
+                            </ul>
+                <ul>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_40">test 7 (3)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_41">test 8 (2)</a></li>
+                                        <li><a href="http://172.16.44.19/oc/index.php?route=product/category&amp;path=34_42">test 9 (1)</a></li>
+                                                                    </ul>
+              </div>
+          </li>
+      </ul>
+</div>
+<div id="notification"></div>
+ 
+<div id="content">  <div class="breadcrumb">
+        <a href="http://172.16.44.19/oc/index.php?route=common/home">Home</a>
+         &raquo; <a href="http://172.16.44.19/oc/index.php?route=checkout/cart">Shopping Cart</a>
+      </div>
+  <h1>Shopping Cart        &nbsp;(0.00kg)
+      </h1>
+  <form action="http://172.16.44.19/oc/index.php?route=checkout/cart" method="post" enctype="multipart/form-data">
+    <div class="cart-info">
+      <table>
+        <thead>
+          <tr>
+            <td class="image">Image</td>
+            <td class="name">Product Name</td>
+            <td class="model">Model</td>
+            <td class="quantity">Quantity</td>
+            <td class="price">Unit Price</td>
+            <td class="total">Total</td>
+          </tr>
+        </thead>
+        <tbody>
+                    <tr>
+            <td class="image">              <a href="http://172.16.44.19/oc/index.php?route=product/product&amp;product_id=30"><img src="http://172.16.44.19/oc/image/cache/data/demo/canon_eos_5d_1-47x47.jpg" alt="Canon EOS 5D" title="Canon EOS 5D" /></a>
+              </td>
+            <td class="name"><a href="http://172.16.44.19/oc/index.php?route=product/product&amp;product_id=30">Canon EOS 5D</a>
+                            <div>
+                              </div>
+                            <small>Reward Points: 200</small>
+              </td>
+            <td class="model">Product 3</td>
+            <td class="quantity"><input type="text" name="quantity[30]" value="1" size="1" />
+              &nbsp;
+              <input type="image" src="catalog/view/theme/default/image/update.png" alt="Update" title="Update" />
+              &nbsp;<a href="http://172.16.44.19/oc/index.php?route=checkout/cart&amp;remove=30"><img src="catalog/view/theme/default/image/remove.png" alt="Remove" title="Remove" /></a></td>
+            <td class="price">73.43€</td>
+            <td class="total">73.43€</td>
+          </tr>
+                            </tbody>
+      </table>
+    </div>
+  </form>
+    <h2>What would you like to do next?</h2>
+  <div class="content">
+    <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+    <table class="radio">
+            <tr class="highlight">
+        <td>          <input type="radio" name="next" value="coupon" id="use_coupon" />
+          </td>
+        <td><label for="use_coupon">Use Coupon Code</label></td>
+      </tr>
+                  <tr class="highlight">
+        <td>          <input type="radio" name="next" value="voucher" id="use_voucher" />
+          </td>
+        <td><label for="use_voucher">Use Gift Voucher</label></td>
+      </tr>
+                        <tr class="highlight">
+        <td>          <input type="radio" name="next" value="shipping" id="shipping_estimate" />
+          </td>
+        <td><label for="shipping_estimate">Estimate Shipping &amp; Taxes</label></td>
+      </tr>
+          </table>
+  </div>
+  <div class="cart-module">
+    <div id="coupon" class="content" style="display: none;">
+      <form action="http://172.16.44.19/oc/index.php?route=checkout/cart" method="post" enctype="multipart/form-data">
+        Enter your coupon here:&nbsp;
+        <input type="text" name="coupon" value="" />
+        <input type="hidden" name="next" value="coupon" />
+        &nbsp;
+        <input type="submit" value="Apply Coupon" class="button" />
+      </form>
+    </div>
+    <div id="voucher" class="content" style="display: none;">
+      <form action="http://172.16.44.19/oc/index.php?route=checkout/cart" method="post" enctype="multipart/form-data">
+        Enter your gift voucher code here:&nbsp;
+        <input type="text" name="voucher" value="" />
+        <input type="hidden" name="next" value="voucher" />
+        &nbsp;
+        <input type="submit" value="Apply Voucher" class="button" />
+      </form>
+    </div>
+    <div id="reward" class="content" style="display: none;">
+      <form action="http://172.16.44.19/oc/index.php?route=checkout/cart" method="post" enctype="multipart/form-data">
+        Points to use (Max 0):&nbsp;
+        <input type="text" name="reward" value="" />
+        <input type="hidden" name="next" value="reward" />
+        &nbsp;
+        <input type="submit" value="Apply Points" class="button" />
+      </form>
+    </div>
+    <div id="shipping" class="content" style="display: none;">
+      <p>Enter your destination to get a shipping estimate.</p>
+      <table>
+        <tr>
+          <td><span class="required">*</span> Country:</td>
+          <td><select name="country_id">
+              <option value=""> --- Please Select --- </option>
+                                          <option value="244">Aaland Islands</option>
+                                                        <option value="1">Afghanistan</option>
+                                                        <option value="2">Albania</option>
+                                                        <option value="3">Algeria</option>
+                                                        <option value="4">American Samoa</option>
+                                                        <option value="5">Andorra</option>
+                                                        <option value="6">Angola</option>
+                                                        <option value="7">Anguilla</option>
+                                                        <option value="8">Antarctica</option>
+                                                        <option value="9">Antigua and Barbuda</option>
+                                                        <option value="10">Argentina</option>
+                                                        <option value="11">Armenia</option>
+                                                        <option value="12">Aruba</option>
+                                                        <option value="13">Australia</option>
+                                                        <option value="14">Austria</option>
+                                                        <option value="15">Azerbaijan</option>
+                                                        <option value="16">Bahamas</option>
+                                                        <option value="17">Bahrain</option>
+                                                        <option value="18">Bangladesh</option>
+                                                        <option value="19">Barbados</option>
+                                                        <option value="20">Belarus</option>
+                                                        <option value="21">Belgium</option>
+                                                        <option value="22">Belize</option>
+                                                        <option value="23">Benin</option>
+                                                        <option value="24">Bermuda</option>
+                                                        <option value="25">Bhutan</option>
+                                                        <option value="26">Bolivia</option>
+                                                        <option value="245">Bonaire, Sint Eustatius and Saba</option>
+                                                        <option value="27">Bosnia and Herzegovina</option>
+                                                        <option value="28">Botswana</option>
+                                                        <option value="29">Bouvet Island</option>
+                                                        <option value="30">Brazil</option>
+                                                        <option value="31">British Indian Ocean Territory</option>
+                                                        <option value="32">Brunei Darussalam</option>
+                                                        <option value="33">Bulgaria</option>
+                                                        <option value="34">Burkina Faso</option>
+                                                        <option value="35">Burundi</option>
+                                                        <option value="36">Cambodia</option>
+                                                        <option value="37">Cameroon</option>
+                                                        <option value="38">Canada</option>
+                                                        <option value="251">Canary Islands</option>
+                                                        <option value="39">Cape Verde</option>
+                                                        <option value="40">Cayman Islands</option>
+                                                        <option value="41">Central African Republic</option>
+                                                        <option value="42">Chad</option>
+                                                        <option value="43">Chile</option>
+                                                        <option value="44">China</option>
+                                                        <option value="45">Christmas Island</option>
+                                                        <option value="46">Cocos (Keeling) Islands</option>
+                                                        <option value="47">Colombia</option>
+                                                        <option value="48">Comoros</option>
+                                                        <option value="49">Congo</option>
+                                                        <option value="50">Cook Islands</option>
+                                                        <option value="51">Costa Rica</option>
+                                                        <option value="52">Cote D'Ivoire</option>
+                                                        <option value="53">Croatia</option>
+                                                        <option value="54">Cuba</option>
+                                                        <option value="246">Curacao</option>
+                                                        <option value="55">Cyprus</option>
+                                                        <option value="56">Czech Republic</option>
+                                                        <option value="237">Democratic Republic of Congo</option>
+                                                        <option value="57">Denmark</option>
+                                                        <option value="58">Djibouti</option>
+                                                        <option value="59">Dominica</option>
+                                                        <option value="60">Dominican Republic</option>
+                                                        <option value="61">East Timor</option>
+                                                        <option value="62">Ecuador</option>
+                                                        <option value="63">Egypt</option>
+                                                        <option value="64">El Salvador</option>
+                                                        <option value="65">Equatorial Guinea</option>
+                                                        <option value="66">Eritrea</option>
+                                                        <option value="67">Estonia</option>
+                                                        <option value="68">Ethiopia</option>
+                                                        <option value="69">Falkland Islands (Malvinas)</option>
+                                                        <option value="70">Faroe Islands</option>
+                                                        <option value="71">Fiji</option>
+                                                        <option value="72">Finland</option>
+                                                        <option value="74">France, Metropolitan</option>
+                                                        <option value="75">French Guiana</option>
+                                                        <option value="76">French Polynesia</option>
+                                                        <option value="77">French Southern Territories</option>
+                                                        <option value="126">FYROM</option>
+                                                        <option value="78">Gabon</option>
+                                                        <option value="79">Gambia</option>
+                                                        <option value="80">Georgia</option>
+                                                        <option value="81">Germany</option>
+                                                        <option value="82">Ghana</option>
+                                                        <option value="83">Gibraltar</option>
+                                                        <option value="84">Greece</option>
+                                                        <option value="85">Greenland</option>
+                                                        <option value="86">Grenada</option>
+                                                        <option value="87">Guadeloupe</option>
+                                                        <option value="88">Guam</option>
+                                                        <option value="89">Guatemala</option>
+                                                        <option value="241">Guernsey</option>
+                                                        <option value="90">Guinea</option>
+                                                        <option value="91">Guinea-Bissau</option>
+                                                        <option value="92">Guyana</option>
+                                                        <option value="93">Haiti</option>
+                                                        <option value="94">Heard and Mc Donald Islands</option>
+                                                        <option value="95">Honduras</option>
+                                                        <option value="96">Hong Kong</option>
+                                                        <option value="97">Hungary</option>
+                                                        <option value="98">Iceland</option>
+                                                        <option value="99">India</option>
+                                                        <option value="100">Indonesia</option>
+                                                        <option value="101">Iran (Islamic Republic of)</option>
+                                                        <option value="102">Iraq</option>
+                                                        <option value="103">Ireland</option>
+                                                        <option value="104">Israel</option>
+                                                        <option value="105">Italy</option>
+                                                        <option value="106">Jamaica</option>
+                                                        <option value="107">Japan</option>
+                                                        <option value="240">Jersey</option>
+                                                        <option value="108">Jordan</option>
+                                                        <option value="109">Kazakhstan</option>
+                                                        <option value="110">Kenya</option>
+                                                        <option value="111">Kiribati</option>
+                                                        <option value="113">Korea, Republic of</option>
+                                                        <option value="114">Kuwait</option>
+                                                        <option value="115">Kyrgyzstan</option>
+                                                        <option value="116">Lao People's Democratic Republic</option>
+                                                        <option value="117">Latvia</option>
+                                                        <option value="118">Lebanon</option>
+                                                        <option value="119">Lesotho</option>
+                                                        <option value="120">Liberia</option>
+                                                        <option value="121">Libyan Arab Jamahiriya</option>
+                                                        <option value="122">Liechtenstein</option>
+                                                        <option value="123">Lithuania</option>
+                                                        <option value="124">Luxembourg</option>
+                                                        <option value="125">Macau</option>
+                                                        <option value="127">Madagascar</option>
+                                                        <option value="128">Malawi</option>
+                                                        <option value="129">Malaysia</option>
+                                                        <option value="130">Maldives</option>
+                                                        <option value="131">Mali</option>
+                                                        <option value="132">Malta</option>
+                                                        <option value="133">Marshall Islands</option>
+                                                        <option value="134">Martinique</option>
+                                                        <option value="135">Mauritania</option>
+                                                        <option value="136">Mauritius</option>
+                                                        <option value="137">Mayotte</option>
+                                                        <option value="138">Mexico</option>
+                                                        <option value="139">Micronesia, Federated States of</option>
+                                                        <option value="140" selected="selected">Moldova, Republic of</option>
+                                                        <option value="141">Monaco</option>
+                                                        <option value="142">Mongolia</option>
+                                                        <option value="242">Montenegro</option>
+                                                        <option value="143">Montserrat</option>
+                                                        <option value="144">Morocco</option>
+                                                        <option value="145">Mozambique</option>
+                                                        <option value="146">Myanmar</option>
+                                                        <option value="147">Namibia</option>
+                                                        <option value="148">Nauru</option>
+                                                        <option value="149">Nepal</option>
+                                                        <option value="150">Netherlands</option>
+                                                        <option value="151">Netherlands Antilles</option>
+                                                        <option value="152">New Caledonia</option>
+                                                        <option value="153">New Zealand</option>
+                                                        <option value="154">Nicaragua</option>
+                                                        <option value="155">Niger</option>
+                                                        <option value="156">Nigeria</option>
+                                                        <option value="157">Niue</option>
+                                                        <option value="158">Norfolk Island</option>
+                                                        <option value="112">North Korea</option>
+                                                        <option value="159">Northern Mariana Islands</option>
+                                                        <option value="160">Norway</option>
+                                                        <option value="161">Oman</option>
+                                                        <option value="162">Pakistan</option>
+                                                        <option value="163">Palau</option>
+                                                        <option value="247">Palestinian Territory, Occupied</option>
+                                                        <option value="164">Panama</option>
+                                                        <option value="165">Papua New Guinea</option>
+                                                        <option value="166">Paraguay</option>
+                                                        <option value="167">Peru</option>
+                                                        <option value="168">Philippines</option>
+                                                        <option value="169">Pitcairn</option>
+                                                        <option value="170">Poland</option>
+                                                        <option value="171">Portugal</option>
+                                                        <option value="172">Puerto Rico</option>
+                                                        <option value="173">Qatar</option>
+                                                        <option value="174">Reunion</option>
+                                                        <option value="175">Romania</option>
+                                                        <option value="176">Russian Federation</option>
+                                                        <option value="177">Rwanda</option>
+                                                        <option value="178">Saint Kitts and Nevis</option>
+                                                        <option value="179">Saint Lucia</option>
+                                                        <option value="180">Saint Vincent and the Grenadines</option>
+                                                        <option value="181">Samoa</option>
+                                                        <option value="182">San Marino</option>
+                                                        <option value="183">Sao Tome and Principe</option>
+                                                        <option value="184">Saudi Arabia</option>
+                                                        <option value="185">Senegal</option>
+                                                        <option value="243">Serbia</option>
+                                                        <option value="186">Seychelles</option>
+                                                        <option value="187">Sierra Leone</option>
+                                                        <option value="188">Singapore</option>
+                                                        <option value="189">Slovak Republic</option>
+                                                        <option value="190">Slovenia</option>
+                                                        <option value="191">Solomon Islands</option>
+                                                        <option value="192">Somalia</option>
+                                                        <option value="193">South Africa</option>
+                                                        <option value="194">South Georgia &amp; South Sandwich Islands</option>
+                                                        <option value="248">South Sudan</option>
+                                                        <option value="195">Spain</option>
+                                                        <option value="196">Sri Lanka</option>
+                                                        <option value="249">St. Barthelemy</option>
+                                                        <option value="197">St. Helena</option>
+                                                        <option value="250">St. Martin (French part)</option>
+                                                        <option value="198">St. Pierre and Miquelon</option>
+                                                        <option value="199">Sudan</option>
+                                                        <option value="200">Suriname</option>
+                                                        <option value="201">Svalbard and Jan Mayen Islands</option>
+                                                        <option value="202">Swaziland</option>
+                                                        <option value="203">Sweden</option>
+                                                        <option value="204">Switzerland</option>
+                                                        <option value="205">Syrian Arab Republic</option>
+                                                        <option value="206">Taiwan</option>
+                                                        <option value="207">Tajikistan</option>
+                                                        <option value="208">Tanzania, United Republic of</option>
+                                                        <option value="209">Thailand</option>
+                                                        <option value="210">Togo</option>
+                                                        <option value="211">Tokelau</option>
+                                                        <option value="212">Tonga</option>
+                                                        <option value="213">Trinidad and Tobago</option>
+                                                        <option value="214">Tunisia</option>
+                                                        <option value="215">Turkey</option>
+                                                        <option value="216">Turkmenistan</option>
+                                                        <option value="217">Turks and Caicos Islands</option>
+                                                        <option value="218">Tuvalu</option>
+                                                        <option value="219">Uganda</option>
+                                                        <option value="220">Ukraine</option>
+                                                        <option value="221">United Arab Emirates</option>
+                                                        <option value="222">United Kingdom</option>
+                                                        <option value="223">United States</option>
+                                                        <option value="224">United States Minor Outlying Islands</option>
+                                                        <option value="225">Uruguay</option>
+                                                        <option value="226">Uzbekistan</option>
+                                                        <option value="227">Vanuatu</option>
+                                                        <option value="228">Vatican City State (Holy See)</option>
+                                                        <option value="229">Venezuela</option>
+                                                        <option value="230">Viet Nam</option>
+                                                        <option value="231">Virgin Islands (British)</option>
+                                                        <option value="232">Virgin Islands (U.S.)</option>
+                                                        <option value="233">Wallis and Futuna Islands</option>
+                                                        <option value="234">Western Sahara</option>
+                                                        <option value="235">Yemen</option>
+                                                        <option value="238">Zambia</option>
+                                                        <option value="239">Zimbabwe</option>
+                                        </select></td>
+        </tr>
+        <tr>
+          <td><span class="required">*</span> Region / State:</td>
+          <td><select name="zone_id">
+            </select></td>
+        </tr>
+        <tr>
+          <td><span id="postcode-required" class="required">*</span> Post Code:</td>
+          <td><input type="text" name="postcode" value="md2020" /></td>
+        </tr>
+      </table>
+      <input type="button" value="Get Quotes" id="button-quote" class="button" />
+    </div>
+  </div>
+    <div class="cart-total">
+    <table id="total">
+            <tr>
+        <td class="right"><b>Sub-Total:</b></td>
+        <td class="right">73.43€</td>
+      </tr>
+            <tr>
+        <td class="right"><b>Total:</b></td>
+        <td class="right">73.43€</td>
+      </tr>
+          </table>
+  </div>
+  <div class="buttons">
+    <div class="right"><a href="http://172.16.44.19/oc/index.php?route=checkout/checkout" class="button">Checkout</a></div>
+    <div class="center"><a href="http://172.16.44.19/oc/index.php?route=common/home" class="button">Continue Shopping</a></div>
+  </div>
+  </div>
+<script type="text/javascript"><!--
+$('input[name=\'next\']').bind('change', function() {
+	$('.cart-module > div').hide();
+	
+	$('#' + this.value).show();
+});
+//--></script>
+<script type="text/javascript"><!--
+$('#button-quote').live('click', function() {
+	$.ajax({
+		url: 'index.php?route=checkout/cart/quote',
+		type: 'post',
+		data: 'country_id=' + $('select[name=\'country_id\']').val() + '&zone_id=' + $('select[name=\'zone_id\']').val() + '&postcode=' + encodeURIComponent($('input[name=\'postcode\']').val()),
+		dataType: 'json',		
+		beforeSend: function() {
+			$('#button-quote').attr('disabled', true);
+			$('#button-quote').after('<span class="wait">&nbsp;<img src="catalog/view/theme/default/image/loading.gif" alt="" /></span>');
+		},
+		complete: function() {
+			$('#button-quote').attr('disabled', false);
+			$('.wait').remove();
+		},		
+		success: function(json) {
+			$('.success, .warning, .attention, .error').remove();			
+						
+			if (json['error']) {
+				if (json['error']['warning']) {
+					$('#notification').html('<div class="warning" style="display: none;">' + json['error']['warning'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+					
+					$('.warning').fadeIn('slow');
+					
+					$('html, body').animate({ scrollTop: 0 }, 'slow'); 
+				}	
+							
+				if (json['error']['country']) {
+					$('select[name=\'country_id\']').after('<span class="error">' + json['error']['country'] + '</span>');
+				}	
+				
+				if (json['error']['zone']) {
+					$('select[name=\'zone_id\']').after('<span class="error">' + json['error']['zone'] + '</span>');
+				}
+				
+				if (json['error']['postcode']) {
+					$('input[name=\'postcode\']').after('<span class="error">' + json['error']['postcode'] + '</span>');
+				}					
+			}
+			
+			if (json['shipping_method']) {
+				html  = '<h2>Please select the preferred shipping method to use on this order.</h2>';
+				html += '<form action="http://172.16.44.19/oc/index.php?route=checkout/cart" method="post" enctype="multipart/form-data">';
+				html += '  <table class="radio">';
+				
+				for (i in json['shipping_method']) {
+					html += '<tr>';
+					html += '  <td colspan="3"><b>' + json['shipping_method'][i]['title'] + '</b></td>';
+					html += '</tr>';
+				
+					if (!json['shipping_method'][i]['error']) {
+						for (j in json['shipping_method'][i]['quote']) {
+							html += '<tr class="highlight">';
+							
+							if (json['shipping_method'][i]['quote'][j]['code'] == '') {
+								html += '<td><input type="radio" name="shipping_method" value="' + json['shipping_method'][i]['quote'][j]['code'] + '" id="' + json['shipping_method'][i]['quote'][j]['code'] + '" checked="checked" /></td>';
+							} else {
+								html += '<td><input type="radio" name="shipping_method" value="' + json['shipping_method'][i]['quote'][j]['code'] + '" id="' + json['shipping_method'][i]['quote'][j]['code'] + '" /></td>';
+							}
+								
+							html += '  <td><label for="' + json['shipping_method'][i]['quote'][j]['code'] + '">' + json['shipping_method'][i]['quote'][j]['title'] + '</label></td>';
+							html += '  <td style="text-align: right;"><label for="' + json['shipping_method'][i]['quote'][j]['code'] + '">' + json['shipping_method'][i]['quote'][j]['text'] + '</label></td>';
+							html += '</tr>';
+						}		
+					} else {
+						html += '<tr>';
+						html += '  <td colspan="3"><div class="error">' + json['shipping_method'][i]['error'] + '</div></td>';
+						html += '</tr>';						
+					}
+				}
+				
+				html += '  </table>';
+				html += '  <br />';
+				html += '  <input type="hidden" name="next" value="shipping" />';
+				
+								html += '  <input type="submit" value="Apply Shipping" id="button-shipping" class="button" disabled="disabled" />';	
+											
+				html += '</form>';
+				
+				$.colorbox({
+					overlayClose: true,
+					opacity: 0.5,
+					width: '600px',
+					height: '400px',
+					href: false,
+					html: html
+				});
+				
+				$('input[name=\'shipping_method\']').bind('change', function() {
+					$('#button-shipping').attr('disabled', false);
+				});
+			}
+		}
+	});
+});
+//--></script> 
+<script type="text/javascript"><!--
+$('select[name=\'country_id\']').bind('change', function() {
+	$.ajax({
+		url: 'index.php?route=checkout/cart/country&country_id=' + this.value,
+		dataType: 'json',
+		beforeSend: function() {
+			$('select[name=\'country_id\']').after('<span class="wait">&nbsp;<img src="catalog/view/theme/default/image/loading.gif" alt="" /></span>');
+		},
+		complete: function() {
+			$('.wait').remove();
+		},			
+		success: function(json) {
+			if (json['postcode_required'] == '1') {
+				$('#postcode-required').show();
+			} else {
+				$('#postcode-required').hide();
+			}
+			
+			html = '<option value=""> --- Please Select --- </option>';
+			
+			if (json['zone'] != '') {
+				for (i = 0; i < json['zone'].length; i++) {
+        			html += '<option value="' + json['zone'][i]['zone_id'] + '"';
+	    			
+					if (json['zone'][i]['zone_id'] == '2182') {
+	      				html += ' selected="selected"';
+	    			}
+	
+	    			html += '>' + json['zone'][i]['name'] + '</option>';
+				}
+			} else {
+				html += '<option value="0" selected="selected"> --- None --- </option>';
+			}
+			
+			$('select[name=\'zone_id\']').html(html);
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+		}
+	});
+});
+
+$('select[name=\'country_id\']').trigger('change');
+//--></script>
+<div id="footer">
+    <div class="column">
+    <h3>Information</h3>
+    <ul>
+            <li><a href="http://172.16.44.19/oc/index.php?route=information/information&amp;information_id=4">About Us</a></li>
+            <li><a href="http://172.16.44.19/oc/index.php?route=information/information&amp;information_id=6">Delivery Information</a></li>
+            <li><a href="http://172.16.44.19/oc/index.php?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+            <li><a href="http://172.16.44.19/oc/index.php?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+          </ul>
+  </div>
+    <div class="column">
+    <h3>Customer Service</h3>
+    <ul>
+      <li><a href="http://172.16.44.19/oc/index.php?route=information/contact">Contact Us</a></li>
+      <li><a href="http://172.16.44.19/oc/index.php?route=account/return/insert">Returns</a></li>
+      <li><a href="http://172.16.44.19/oc/index.php?route=information/sitemap">Site Map</a></li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3>Extras</h3>
+    <ul>
+      <li><a href="http://172.16.44.19/oc/index.php?route=product/manufacturer">Brands</a></li>
+      <li><a href="http://172.16.44.19/oc/index.php?route=account/voucher">Gift Vouchers</a></li>
+      <li><a href="http://172.16.44.19/oc/index.php?route=affiliate/account">Affiliates</a></li>
+      <li><a href="http://172.16.44.19/oc/index.php?route=product/special">Specials</a></li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3>My Account</h3>
+    <ul>
+      <li><a href="http://172.16.44.19/oc/index.php?route=account/account">My Account</a></li>
+      <li><a href="http://172.16.44.19/oc/index.php?route=account/order">Order History</a></li>
+      <li><a href="http://172.16.44.19/oc/index.php?route=account/wishlist">Wish List</a></li>
+      <li><a href="http://172.16.44.19/oc/index.php?route=account/newsletter">Newsletter</a></li>
+    </ul>
+  </div>
+</div>
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+<div id="powered">Powered By <a href="http://www.opencart.com">OpenCart</a><br /> Your Store &copy; 2017</div>
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+</div>
+</body></html>
+0
+

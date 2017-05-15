@@ -1,0 +1,11 @@
+[t28]
+FileName1=t28.htm
+URL1=http://172.16.44.19/oc/index.php?route=checkout/checkout/country&country_id=140
+Total=1
+RequestHeaderFile=t28_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t28_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_28.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,15 @@
+[t4]
+FileName1=t4.htm
+URL1=http://172.16.44.19/oc/index.php?route=product/compare/add
+Total=3
+RequestHeaderFile=t4_RequestHeader.txt
+RequestBodyFile=t4_RequestBody.txt
+ResponseHeaderFile=t4_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_4.xml
+FileName2=t4_close.png
+URL2=http://172.16.44.19/oc/catalog/view/theme/default/image/close.png
+FileName3=t4_success.png
+URL3=http://172.16.44.19/oc/catalog/view/theme/default/image/success.png
+[ProtocolInfo]
+ProtocolId=QTWeb
