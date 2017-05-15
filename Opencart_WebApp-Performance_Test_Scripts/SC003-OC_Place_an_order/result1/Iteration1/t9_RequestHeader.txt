@@ -1,9 +1,0 @@
-GET /static/sh.f7354b64245ec78fa8b63827.html HTTP/1.1
-Referer: http://172.16.44.19/oc/index.php?route=product/product&path=33&product_id=30
-User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko
-Accept-Encoding: gzip, deflate
-Accept-Language: en-US,en;q=0.8,ru;q=0.6,ro-MD;q=0.4,ro;q=0.2
-Accept: */*
-Connection: Keep-Alive
-Host: s7.addthis.com
-
